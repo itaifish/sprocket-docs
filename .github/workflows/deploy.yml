@@ -33,6 +33,6 @@ jobs:
                   pip install mike
                   pip install mkdocs-markdownextradata-plugin
             - run: |
-                  echo $PACKAGE_VERSION
-                  mkdocs gh-deploy
+                  echo $PACKAGE_VERSION 
+                  mike set-default latest --allow-undefined
                   mike deploy --push --update-aliases $PACKAGE_VERSION latest
