@@ -24,7 +24,9 @@ jobs:
                   path: .cache
                   restore-keys: |
                       mkdocs-material-
-            - run: pip install mkdocs-material
+            - run: |
+                  pip install mkdocs-material
+                  pip install mike
             - run: |
                   echo "PACKAGE_VERSION=$(cat config.json | jq .version)" >> $GITHUB_ENV
                   mike deploy --push --update-aliases ${{ env.version }} latest
