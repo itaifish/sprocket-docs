@@ -1,10 +1,26 @@
 site_name: "Sprocket Pan Documentation"
 site_url: https://sprocketpan.com
+repo_url: https://github.com/itaifish/Sprocket-Pan
 theme:
     name: material
+    palette:
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
+          # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
     logo: assets/logo.svg
     favicon: assets/favicon.svg
     custom_dir: overrides
+    icon:
+        repo: fontawesome/brands/github
 extra:
     version:
         provider: mike
