@@ -1,0 +1,10 @@
+site_name: "Sprocket Pan Documentation"
+site_url: https://sprocketpan.com
+theme:
+    name: material
+    logo: assets/logo.svg
+    favicon: assets/favicon.svg
+    custom_dir: overrides
+extra:
+    version:
+        provider: mike
