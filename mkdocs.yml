@@ -3,6 +3,8 @@ site_url: https://sprocketpan.com
 repo_url: https://github.com/itaifish/Sprocket-Pan
 theme:
     name: material
+    font:
+        text: inter
     palette:
         # Palette toggle for light mode
         - media: "(prefers-color-scheme: light)"
