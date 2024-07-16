@@ -21,7 +21,7 @@ jobs:
                   python-version: 3.x
             - run: |
                   echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-                  echo "PACKAGE_VERSION=$(cat config.json | jq .version)" >> $GITHUB_ENV
+                  echo "PACKAGE_VERSION=$(cat config.json | jq -r .version)" >> $GITHUB_ENV
             - uses: actions/cache@v4
               with:
                   key: mkdocs-material-${{ env.cache_id }}
