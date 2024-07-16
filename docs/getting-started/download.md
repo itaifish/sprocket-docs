@@ -1,6 +1,6 @@
 # Download Sprocket Pan Here
 
-## Current Version
+## Current Version - v{{ extra.config.version }}
 
 === "Windows"
 
