@@ -28,6 +28,6 @@ jobs:
                   pip install mkdocs-material
                   pip install mike
             - run: |
-                  ls
+                  ls -al
                   echo "PACKAGE_VERSION=$(cat config.json | jq .version)" >> $GITHUB_ENV
                   mike deploy --push --update-aliases ${{ env.version }} latest
