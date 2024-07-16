@@ -58,5 +58,6 @@ plugins:
     - markdownextradata
 markdown_extensions:
     - pymdownx.superfences
+    - pymdownx.tilde
     - pymdownx.tabbed:
           alternate_style: true
