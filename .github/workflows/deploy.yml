@@ -25,4 +25,6 @@ jobs:
                   restore-keys: |
                       mkdocs-material-
             - run: pip install mkdocs-material
-            - run: mkdocs gh-deploy --force
+            - run: |
+                  echo "PACKAGE_VERSION=$(cat config.json | jq .version)" >> $GITHUB_ENV
+                  mike deploy --push --update-aliases ${{ env.version }} latest
