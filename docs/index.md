@@ -1,17 +1,6 @@
-# Welcome to MkDocs
+# Sprocket Pan
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+A tool for sending HTTP(S) requests over the internet. Similar to [Postman](https://www.postman.com/) and [Insomnia](https://insomnia.rest/).
 
-## Commands
+## Inspiration
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
