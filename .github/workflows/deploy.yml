@@ -34,4 +34,5 @@ jobs:
                   pip install mkdocs-markdownextradata-plugin
             - run: |
                   echo $PACKAGE_VERSION
+                  mkdocs gh-deploy
                   mike deploy --push --update-aliases $PACKAGE_VERSION latest
