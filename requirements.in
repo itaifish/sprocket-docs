@@ -1,4 +1,4 @@
-# Run pip-compile (Installed with )to generate the requirements.txt
+# Run pip-compile (Installed with pip-tools)to generate the requirements.txt
 mkdocs-material==9.5.29
 mike==2.1.2
 mkdocs-markdownextradata-plugin==0.2.5

@@ -5,10 +5,7 @@
 Setup
 
 ```shell
-
-pip install mkdocs-material
-pip install mike
-pip install mkdocs-markdownextradata-plugin
+pip install -r requirements.txt
 ```
 
 Start
