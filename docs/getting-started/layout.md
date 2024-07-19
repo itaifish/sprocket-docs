@@ -20,13 +20,25 @@ You can open a workspace by clicking on the `Open` button.
 
 ### Toolbar
 
+![Toolbar](../assets/images/getting-started/layout/toolbar.png)
+
+The toolbar is a floating set of actions that the user can take to interact with Sprocket Pan. Like all other buttons in SP, highlighting over any of the toolbar actions will show a tooltip description.
+
 #### Import From File
+
+The first button in the top row of buttons, `Import from File` opens up a file selection dialog. SP currently supports openAPI/swagger docs versions `2`, `3` and `3.1`. You can click on any openAPI `JSON` or `yaml` file to load the document into SP.
 
 #### Create New
 
+The second button in the top row, `Create New`, will allow you to make any of the root file system items, either a new [Service](../terminology/#service), [Environment](../terminology/#environment), or [Script](../terminology/#script).
+
 #### Save
 
+Remember to save often! This button will save all of your changes to the filesystem. An auto-save feature is in the works.
+
 #### Settings
+
+This button opens the settings menu. 
 
 #### Tab Navigation
 
