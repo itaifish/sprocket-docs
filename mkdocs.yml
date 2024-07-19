@@ -1,6 +1,15 @@
 site_name: "Sprocket Pan Documentation"
 site_url: https://sprocketpan.com
 repo_url: https://github.com/itaifish/Sprocket-Pan
+nav:
+    - Sprocket Pan: index.md
+    - Getting Started:
+          - Download: getting-started/download.md
+          - Layout: getting-started/layout.md
+    - Documentation:
+          - Panels: documentation/panels.md
+          - Terminology: documentation/terminology.md
+    - Contributing: contributing.md
 theme:
     name: material
     font:

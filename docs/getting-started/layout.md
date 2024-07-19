@@ -30,7 +30,7 @@ The first button in the top row of buttons, `Import from File` opens up a file s
 
 #### Create New
 
-The second button in the top row, `Create New`, will allow you to make any of the root file system items, either a new [Service](../terminology/#service), [Environment](../terminology/#environment), or [Script](../terminology/#script).
+The second button in the top row, `Create New`, will allow you to make any of the root file system items, either a new [Service](../../documentation/#service), [Environment](../../documentation/terminology/#environment), or [Script](../../documentation/#script).
 
 #### Save
 
@@ -38,7 +38,7 @@ Remember to save often! This button will save all of your changes to the filesys
 
 #### Settings
 
-This button opens the [settings](../panels/#settings) menu.
+This button opens the [settings](../../documentation/panels/#settings) menu.
 
 #### Tab Navigation
 
