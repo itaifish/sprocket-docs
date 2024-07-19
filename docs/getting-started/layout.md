@@ -38,7 +38,7 @@ Remember to save often! This button will save all of your changes to the filesys
 
 #### Settings
 
-This button opens the settings menu. 
+This button opens the [settings](../panels/#settings) menu.
 
 #### Tab Navigation
 
