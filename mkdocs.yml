@@ -56,9 +56,6 @@ plugins:
           javascript_dir: js
     - search
     - markdownextradata
-    - git-committers:
-          repository: itaifish/Sprocket-Pan
-          branch: main
 
 markdown_extensions:
     - pymdownx.superfences

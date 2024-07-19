@@ -29,9 +29,7 @@ jobs:
                   restore-keys: |
                       mkdocs-material-
             - run: |
-                  pip install mkdocs-material
-                  pip install mike
-                  pip install mkdocs-markdownextradata-plugin
+                  pip install -r requirements.txt
             - run: |
                   echo $PACKAGE_VERSION 
                   mike set-default latest --allow-undefined
