@@ -30,4 +30,10 @@ In the general settings menu, you can control the window zoom, the system theme 
 
 ![Settings Panel - Requests](../assets/images/getting-started/panels/settings-panel-requests.png)
 
-The request settings manu has the options for the network call timeout duration, the maximum number of [history](../terminology/#history) records, and the [script](../terminology/#script) strategy order. For the network call timeout duration
+The request settings menu has the options for the network call timeout duration, the maximum number of [history](../terminology/#history) records, and the [script](../terminology/#script) strategy order. For the network call timeout duration
+
+### Data
+
+![Settings Panel - Data](../assets/images/getting-started/panels/settings-panel-data.png)
+
+The data folder deals with saving, quitting to the [workspace selection screen](../../getting-started/layout/#workspace-selection-screen), and opening the data folder in your system's file explorer. You will rarely need to do this, but the `Open Data Folder` button will open the location of all of the data in Sprocket Pan in your system's file explorer.  

@@ -1,5 +1,7 @@
 # Terminology
 
+## Panel
+
 ## File System
 
 ### Script

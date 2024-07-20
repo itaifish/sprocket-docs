@@ -42,9 +42,15 @@ This button opens the [settings](../../documentation/panels/#settings) menu.
 
 #### Tab Navigation
 
+When you click through different tabs, the history/order of the tabs you selected is preserved. This way, you can quickly naviate to a previously selected tab (and then go 'forward' again to the tab you just left) with these buttons.
+
 #### Search
 
+As the file system grows, finding exactly what you want through a visual search can get cumbersone. The search bar will search through everything in the file system to help you find exactly what you need.
+
 ### File System
+
+
 
 #### Environments
 
