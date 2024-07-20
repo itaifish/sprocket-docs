@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sprocketpan.com/1.0.0/about/</loc>
+         <lastmod>2024-07-20</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sprocketpan.com/1.0.0/contributing/</loc>
          <lastmod>2024-07-20</lastmod>
          <changefreq>daily</changefreq>
