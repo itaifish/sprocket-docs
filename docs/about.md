@@ -2,15 +2,44 @@
 
 ## Authors
 
-### Itai Fish
+<div class="grid cards" markdown>
 
-[:material-web:](https://itai.fish){ .md-button }
-[:simple-github:](https://github.com/itaifish){ .md-button }
+- ### Itai Fish
+  
+    [:material-web:](https://itai.fish){ .md-button }
+    [:simple-github:](https://github.com/itaifish){ .md-button }
 
-### KateLynn Pullen
+- ### KateLynn Pullen
 
-[:simple-github:](https://github.com/kdpullen95){ .md-button }
+    [:simple-github:](https://github.com/kdpullen95){ .md-button }
 
+</div>
+
+## Tech Stack
+
+<div class="grid cards" markdown>
+
+- ### Sprocket Pan
+
+    __Application Framework__: Tauri, Rust
+
+    __Frontend__: Typescript, Vite, React, Redux
+
+    __CI/CD__: Github Actions
+
+    [:simple-github:](https://github.com/itaifish/Sprocket-Pan){ .md-button }
+
+- ### Sprocket Docs
+
+    __Docs Page__: mkdocs, mkdocs-material, python
+
+    __CI/CD__: Github Actions
+
+    __Hosting__: Github Pages
+
+    [:simple-github:](https://github.com/itaifish/sprocket-docs/){ .md-button }
+
+</div>
 
 ## Why "Sprocket Pan"?
 
