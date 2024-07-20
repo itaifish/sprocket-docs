@@ -4,9 +4,9 @@
 
 The Settings Panel allows the user to change different settings within Sprocket Pan. Settings are per-workspace. The Settings Panel can be opened with the gear button in the toolbar.
 
-![Toolbar](../assets/images/getting-started/layout/toolbar.png)	
+![Toolbar](../assets/images/getting-started/layout/toolbar.png)
 
-Whenever a setting is changed, the buttons in the bottom life corner will change to `Cancel` and `Apply` respectively. Click the `Cancel` button to clear all changes, or the `Apply` button to save changes. 
+Whenever a setting is changed, the buttons in the bottom life corner will change to `Cancel` and `Apply` respectively. Click the `Cancel` button to clear all changes, or the `Apply` button to save changes.
 
 ![Settings Buttons](../assets/images/getting-started/panels/settings-cancel-apply-buttons.png)
 
