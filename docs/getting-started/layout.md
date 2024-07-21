@@ -50,14 +50,11 @@ As the file system grows, finding exactly what you want through a visual search 
 
 ### File System
 
+![File System](../assets/images/getting-started/layout/file-system.png)
 
+The file system contains everything saved to Sprocket Pan - [Environments](../../documentation/terminology/#environment), [Scripts](../../documentation/terminology/#script), [Services](../../documentation/terminology/#service), [Endpoints](../../documentation/terminology/#endpoint), and [Requests](../../documentation/terminology/#request).
 
-#### Environments
+The file system is split into three section - Environments, Scripts, and Services. Within services are endpoints, which themselves contain requests. Clicking on any item in the file system will open up the corresponding tab.
 
-#### Scripts
+### Tabs
 
-#### Services
-
-#### Service Endpoints
-
-#### Endpoint Requests
