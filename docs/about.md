@@ -5,7 +5,9 @@
 <div class="grid cards" markdown>
 
 - ### Itai Fish
-  
+
+    ![Itai Avatar](../assets/images/about/avatars/ItaiAvatar.png)
+
     [:material-web:](https://itai.fish){ .md-button }
     [:simple-github:](https://github.com/itaifish){ .md-button }
 
