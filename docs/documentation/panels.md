@@ -37,3 +37,8 @@ The request settings menu has the options for the network call timeout duration,
 ![Settings Panel - Data](../assets/images/getting-started/panels/settings-panel-data.png)
 
 The data folder deals with saving, quitting to the [workspace selection screen](../../getting-started/layout/#workspace-selection-screen), and opening the data folder in your system's file explorer. You will rarely need to do this, but the `Open Data Folder` button will open the location of all of the data in Sprocket Pan in your system's file explorer.  
+
+## Environment
+
+![Environment Panel](../assets/images/getting-started/panels/environment.png)
+

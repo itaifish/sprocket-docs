@@ -58,3 +58,9 @@ The file system is split into three section - Environments, Scripts, and Service
 
 ### Tabs
 
+![Tabs Selection](../assets/images/getting-started/layout/tabs-selection.png)
+
+Tabs are the displayed data and options when an item in the file system is selected. Clicking on the tab at the top will open up the information about that tab, as well as scroll to the corresponding file system entry. Similarly, clicking on an item in the file system will scroll to the tab at the top, if it is already opened.
+
+[:arrow_left: Download](../download){ .md-button }
+[:arrow_right: View the docs](../../documentation/panels){ .md-button }

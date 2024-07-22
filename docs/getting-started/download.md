@@ -22,3 +22,6 @@
 ## Other Versions
 
 All versions of Sprocket Pan can be found in the [Github Repo's Releases](https://github.com/itaifish/Sprocket-Pan/releases)
+
+[:arrow_left: Home](../../){ .md-button }
+[:arrow_right: Layout](../layout){ .md-button }
