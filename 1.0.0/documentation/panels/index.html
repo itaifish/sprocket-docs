@@ -628,6 +628,15 @@ You're not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -748,7 +757,86 @@ You're not viewing the latest version.
 <p><img alt="Settings Panel - Data" src="../../assets/images/getting-started/panels/settings-panel-data.png" /></p>
 <p>The data folder deals with saving, quitting to the <a href="../../getting-started/layout/#workspace-selection-screen">workspace selection screen</a>, and opening the data folder in your system's file explorer. You will rarely need to do this, but the <code>Open Data Folder</code> button will open the location of all of the data in Sprocket Pan in your system's file explorer.  </p>
 <h2 id="environment">Environment</h2>
+<p>The environment panel allows for editing of environments.</p>
 <p><img alt="Environment Panel" src="../../assets/images/getting-started/panels/environment.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Selected Checkmark Toggle</p>
+<ul>
+<li>Click this to toggle whether the environment is selected. Selecting an environment will also un-select all other environments since a maximum of one environment can be selected at any one time.</li>
+</ul>
+<p>(3) View/Edit toggle</p>
+<ul>
+<li>Toggle between view and edit mode. The default mode, edit mode, will function as normal. View mode switches the editor to read-only, and replaces all references to environment variables with their resolved value.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Edit Mode</label><label for="__tabbed_1_2">View Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Edit Mode" src="../../assets/images/getting-started/panels/edit-mode.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="View Mode" src="../../assets/images/getting-started/panels/view-mode.png" /></p>
+</div>
+</div>
+</div>
+<p>(4) Clear Changes</p>
+<ul>
+<li>Clears all unsaved changes, reverting the editor to its untouched state.</li>
+</ul>
+<p>(5) Save Changes</p>
+<ul>
+<li>Saves all unsaved changes. Note that this will not save to disk, only memory. If you'd like to save to disk, the save button in the floating toolbar (top-left), is how to do it.</li>
+</ul>
+<p>(6) Copy to clipboard</p>
+<ul>
+<li>Copies the environment text to the clipboard.</li>
+</ul>
+<p>(7) Format</p>
+<ul>
+<li>Formats the text in the editor.</li>
+</ul>
+<p>(8) Environment Editor</p>
+<ul>
+<li>A monaco (vscode) JSON editor for the environment variables. Only supports string keys and string values.</li>
+</ul>
+<h2 id="script">Script</h2>
+<p>The script panel allows for the editing of standalone-scripts.</p>
+<p><img alt="Script Panel" src="../../assets/images/getting-started/panels/script.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Script-Callable Name</p>
+<ul>
+<li>The name that will be used when referencing this script in any script. This name must be unique, and be a valid variable name in Typescript.</li>
+</ul>
+<p>(3) Script Return Variable</p>
+<ul>
+<li>The name of the variable this script returns. This value can be blank. If it is not, then whenever this script is called, it will return the selected variable wrapped in a <code>Promise</code>.
+  <img alt="Script Return Variable Example Image" src="../../assets/images/getting-started/panels/script-return-type.png" /></li>
+</ul>
+<p>(4) Run</p>
+<ul>
+<li>Runs the script as is, and outputs the script's return variable, if it exists.</li>
+</ul>
+<p>(5) Format</p>
+<ul>
+<li>Formats the text in the editor.</li>
+</ul>
+<p>(6) Copy to clipboard</p>
+<ul>
+<li>Copies the script text to the clipboard.</li>
+</ul>
+<p>(7) Script Editor</p>
+<ul>
+<li>A monaco (vscode) Typescript editor for the environment variables.</li>
+</ul>
+<p>(8) Return Variable Output</p>
+<ul>
+<li>Shows the script's return variable's value, if it exists, once a script has been run.</li>
+</ul>
 
 
 
