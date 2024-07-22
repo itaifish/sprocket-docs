@@ -79,4 +79,46 @@ The environment panel allows for editing of environments.
 (7) Format
 
   * Formats the text in the editor.
-	
+
+(8) Environment Editor
+
+  * A monaco (vscode) JSON editor for the environment variables. Only supports string keys and string values.
+
+## Script
+
+The script panel allows for the editing of standalone-scripts.
+
+![Script Panel](../assets/images/getting-started/panels/script.png)
+
+(1) The Title
+
+  * This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.
+
+(2) Script-Callable Name
+
+  * The name that will be used when referencing this script in any script. This name must be unique, and be a valid variable name in Typescript.
+
+(3) Script Return Variable
+
+  * The name of the variable this script returns. This value can be blank. If it is not, then whenever this script is called, it will return the selected variable wrapped in a `Promise`.
+  ![Script Return Variable Example Image](../assets/images/getting-started/panels/script-return-type.png)
+
+(4) Run
+
+  * Runs the script as is, and outputs the script's return variable, if it exists.
+
+(5) Format
+
+  * Formats the text in the editor.
+
+(6) Copy to clipboard
+
+  * Copies the script text to the clipboard.
+
+(7) Script Editor
+
+  * A monaco (vscode) Typescript editor for the environment variables.
+
+(8) Return Variable Output
+
+  * Shows the script's return variable's value, if it exists, once a script has been run.
