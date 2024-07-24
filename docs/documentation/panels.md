@@ -122,3 +122,37 @@ The script panel allows for the editing of standalone-scripts.
 (8) Return Variable Output
 
   * Shows the script's return variable's value, if it exists, once a script has been run.
+
+## Service
+
+The service panel allows for editing services.
+
+![Service Panel](../assets/images/getting-started/panels/service.png)
+
+(1) The Title
+
+  * This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.
+
+(2) Description
+
+  * A description of the service. Be as verbose or succinct as you wish. Displays in markdown.
+
+(3) Information Table
+
+  * General information about the service. The baseurl will be prepended to all requests, and you **can** use environment variables.
+
+(4) Environments
+
+  * Services can have environments local to that service. Click the first circle button to select or deselect the environment. The next button will allow you to duplicate the local environment, and the third button is for deleting the local environment. The buttons/features are otherwise exactly the same as the [Environment Panel](#environment)
+
+(5) Pre- and Post-Request Scripts
+
+  * Scripts that will run before and after any request is run in the service.
+
+(6) Recent Requests
+
+  * A list of the most recent requests that were called, with the date they were last used and a link to open their [Request Panel](#request)
+
+## Endpoint
+
+## Request
