@@ -30,7 +30,7 @@ In the general settings menu, you can control the window zoom, the system theme 
 
 ![Settings Panel - Requests](../assets/images/getting-started/panels/settings-panel-requests.png)
 
-The request settings menu has the options for the network call timeout duration, the maximum number of [history](../terminology/#history) records, and the [script](../terminology/#script) strategy order. For the network call timeout duration
+The request settings menu has the options for the network call timeout duration, the maximum number of [history](../terminology/#history) records, and the [script](../terminology/#script) strategy order (this is the order in which scripts will execute).
 
 ### Data
 
