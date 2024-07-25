@@ -95,10 +95,12 @@ The script panel allows for the editing of standalone-scripts.
   * This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.
 
 (2) Script-Callable Name
+{: #scriptcallablename}
 
-  * The name that will be used when referencing this script in any script. This name must be unique, and be a valid variable name in Typescript.
+  * The name that will be used when [referencing this script](../terminology/#all-scripts) in any script. This name must be unique, and be a valid variable name in Typescript.
 
 (3) Script Return Variable
+{: ##scriptreturnvariable}
 
   * The name of the variable this script returns. This value can be blank. If it is not, then whenever this script is called, it will return the selected variable wrapped in a `Promise`.
   ![Script Return Variable Example Image](../assets/images/getting-started/panels/script-return-type.png)

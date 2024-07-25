@@ -34,6 +34,34 @@ Let's run through the different fields:
 
  * Allows you to send another Sprocket Pan request programatically. Takes one argument, which is the [request ID](../panels/#gitrequestid).
 
+#### setEnvironmentVariable
+
+* Takes in 2-3 arguments
+  
+    * Key: string - the key in the environment to set
+
+    * Value: string - the value to set
+
+    * (Optional) Level: 'request' | 'service' | 'global' - which environment to set the key/value in. Defaults to the request level unless the request is null, then will always set the globally selected environment.
+
+#### setHeader
+
+ * Takes in a key and a value (strings), and saves the new header at the request level.
+
+#### setQueryParam
+
+ * Takes in a key and a value, and adds the given value the array of values for the key, of it exists, or creates a new key/value pair if not. (Query Params can have multiple values for a given key)
+
+#### setQueryParams
+
+ * Takes in a key (string) and a value (array of strings), and overrides the query param at a given key to be the list of values passed in.
+
+#### All Scripts
+
+ * Any and all globally-defined / standalone scripts will also be available as a field in the `sprocketPan` variable, referrable by their [Script-Callable Name](../panels/#scriptcallablename). In the screenshot above, you can see we have two scripts defined with the names `Runnable_Script_Copy_` and `runnableScript` respectively.
+
+ * The return type of standalone scripts will always be the type of whatever the [Script Return Variable](../panels/#scriptreturnvariable) is, wrapped in a promise. It is recommended that you `await` a script whenever you call it, as it may or may not be asynchronous.
+
 ### Service
 
 ### Environment
