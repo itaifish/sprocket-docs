@@ -619,6 +619,99 @@ You're not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#script" class="md-nav__link">
+    <span class="md-ellipsis">
+      Script
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-response-details-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      (9) Response Details Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(9) Response Details Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#history-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      History Header
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diff-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diff Viewer
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -734,10 +827,325 @@ You're not viewing the latest version.
 <p><img alt="Value Display Setting" src="../../assets/images/getting-started/panels/settings-variable-name-off.png" /></p>
 <h3 id="requests">Requests</h3>
 <p><img alt="Settings Panel - Requests" src="../../assets/images/getting-started/panels/settings-panel-requests.png" /></p>
-<p>The request settings menu has the options for the network call timeout duration, the maximum number of <a href="../terminology/#history">history</a> records, and the <a href="../terminology/#script">script</a> strategy order. For the network call timeout duration</p>
+<p>The request settings menu has the options for the network call timeout duration, the maximum number of <a href="../terminology/#history">history</a> records, and the <a href="../terminology/#script">script</a> strategy order (this is the order in which scripts will execute).</p>
 <h3 id="data">Data</h3>
 <p><img alt="Settings Panel - Data" src="../../assets/images/getting-started/panels/settings-panel-data.png" /></p>
 <p>The data folder deals with saving, quitting to the <a href="../../getting-started/layout/#workspace-selection-screen">workspace selection screen</a>, and opening the data folder in your system's file explorer. You will rarely need to do this, but the <code>Open Data Folder</code> button will open the location of all of the data in Sprocket Pan in your system's file explorer.  </p>
+<h2 id="environment">Environment</h2>
+<p>The environment panel allows for editing of environments.</p>
+<p><img alt="Environment Panel" src="../../assets/images/getting-started/panels/environment.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Selected Checkmark Toggle</p>
+<ul>
+<li>Click this to toggle whether the environment is selected. Selecting an environment will also un-select all other environments since a maximum of one environment can be selected at any one time.</li>
+</ul>
+<p>(3) View/Edit toggle</p>
+<ul>
+<li>Toggle between view and edit mode. The default mode, edit mode, will function as normal. View mode switches the editor to read-only, and replaces all references to environment variables with their resolved value.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Edit Mode</label><label for="__tabbed_1_2">View Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Edit Mode" src="../../assets/images/getting-started/panels/edit-mode.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="View Mode" src="../../assets/images/getting-started/panels/view-mode.png" /></p>
+</div>
+</div>
+</div>
+<p>(4) Clear Changes</p>
+<ul>
+<li>Clears all unsaved changes, reverting the editor to its untouched state.</li>
+</ul>
+<p>(5) Save Changes</p>
+<ul>
+<li>Saves all unsaved changes. Note that this will not save to disk, only memory. If you'd like to save to disk, the save button in the floating toolbar (top-left), is how to do it.</li>
+</ul>
+<p>(6) Copy to clipboard</p>
+<ul>
+<li>Copies the environment text to the clipboard.</li>
+</ul>
+<p>(7) Format</p>
+<ul>
+<li>Formats the text in the editor.</li>
+</ul>
+<p>(8) Environment Editor</p>
+<ul>
+<li>A monaco (vscode) JSON editor for the environment variables. Only supports string keys and string values.</li>
+</ul>
+<h2 id="script">Script</h2>
+<p>The script panel allows for the editing of standalone-scripts.</p>
+<p><img alt="Script Panel" src="../../assets/images/getting-started/panels/script.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p id="scriptcallablename">(2) Script-Callable Name</p>
+<ul>
+<li>The name that will be used when <a href="../terminology/#all-scripts">referencing this script</a> in any script. This name must be unique, and be a valid variable name in Typescript.</li>
+</ul>
+<p id="#scriptreturnvariable">(3) Script Return Variable</p>
+<ul>
+<li>The name of the variable this script returns. This value can be blank. If it is not, then whenever this script is called, it will return the selected variable wrapped in a <code>Promise</code>.
+  <img alt="Script Return Variable Example Image" src="../../assets/images/getting-started/panels/script-return-type.png" /></li>
+</ul>
+<p>(4) Run</p>
+<ul>
+<li>Runs the script as is, and outputs the script's return variable, if it exists.</li>
+</ul>
+<p>(5) Format</p>
+<ul>
+<li>Formats the text in the editor.</li>
+</ul>
+<p>(6) Copy to clipboard</p>
+<ul>
+<li>Copies the script text to the clipboard.</li>
+</ul>
+<p>(7) Script Editor</p>
+<ul>
+<li>A monaco (vscode) Typescript editor for the environment variables.</li>
+</ul>
+<p>(8) Return Variable Output</p>
+<ul>
+<li>Shows the script's return variable's value, if it exists, once a script has been run.</li>
+</ul>
+<h2 id="service">Service</h2>
+<p>The service panel allows for editing services.</p>
+<p><img alt="Service Panel" src="../../assets/images/getting-started/panels/service.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Description</p>
+<ul>
+<li>A description of the service. Be as verbose or succinct as you wish. Displays in markdown.</li>
+</ul>
+<p>(3) Information Table</p>
+<ul>
+<li>General information about the service. The baseurl will be prepended to all requests, and you <strong>can</strong> use environment variables.</li>
+</ul>
+<p>(4) Environments</p>
+<ul>
+<li>Services can have environments local to that service. Click the first circle button to select or deselect the environment. The next button will allow you to duplicate the local environment, and the third button is for deleting the local environment. The buttons/features are otherwise exactly the same as the <a href="#environment">Environment Panel</a></li>
+</ul>
+<p>(5) Pre- and Post-Request Scripts</p>
+<ul>
+<li>Scripts that will run before and after any request is run in the service.</li>
+</ul>
+<p>(6) Recent Requests</p>
+<ul>
+<li>A list of the most recent requests that were called, with the date they were last used and a link to open their <a href="#request">Request Panel</a></li>
+</ul>
+<h2 id="endpoint">Endpoint</h2>
+<p>The endpoint panel allows for editing endpoints.</p>
+<p><img alt="Endpoint Panel" src="../../assets/images/getting-started/panels/endpoint-main.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Request Method</p>
+<ul>
+<li>The RESTful Request Method. Click the dropdown to select the method to send.</li>
+</ul>
+<p><img alt="Request Method Options" src="../../assets/images/getting-started/panels/endpoint-methods.png" /></p>
+<p>(3) Endpoint URL</p>
+<ul>
+<li>You can specify the additional url/uri string here. Each Endpoint corresponds to a unique URL of a service.</li>
+</ul>
+<p><img alt="Additional URL Example" src="../../assets/images/getting-started/panels/endpoint-url.png" /></p>
+<p>(4) Options Tabs</p>
+<ul>
+<li>The three tabs you can work in: Headers, Query Params, and Scripts</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Headers</label><label for="__tabbed_2_2">Query Params</label><label for="__tabbed_2_3">Scripts</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Endpoint Headers" src="../../assets/images/getting-started/panels/endpoint-headers.png" /></p>
+<ul>
+<li>Headers to add to every request on this endpoint. This panel is exactly the same as the <a href="#environment">Environment</a></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Endpoint Query Params" src="../../assets/images/getting-started/panels/endpoint-query-params.png" /></p>
+<ul>
+<li>Query params to add to every request on this endpoint. Unlike other key-value-pair JSON editors, this editor can include arrays.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Endpoint Scripts" src="../../assets/images/getting-started/panels/endpoint-scripts.png" /></p>
+<ul>
+<li>Similar to Services and Requests, you can have a script run before or after a request on this endpoint is sent.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>(5) Jump to Request</p>
+<ul>
+<li>Endpoints are a collection of requests. You cannot send a request from an Endpoint. If an Endpoint has a default Request, this button will open up that request.</li>
+</ul>
+<h2 id="request">Request</h2>
+<p>The request panel allows for editing and sending requests.</p>
+<p><img alt="Request Panel" src="../../assets/images/getting-started/panels/request-main.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Request Method [Read-Only]</p>
+<ul>
+<li>The RESTful request method used. You can't edit this in the request panel, you must go into the <a href="#endpoint">Endpoint</a> to change this.</li>
+</ul>
+<p>(3) Full URL [Read-Only]</p>
+<ul>
+<li>Full URL that the request will call. You can't edit this in the request panel, you must go into the <a href="#endpoint">Endpoint</a> to change this. However, you can add query parameters to this specific request, which will show up as part of the full URL.</li>
+</ul>
+<p>(4) Send Request</p>
+<ul>
+<li>Button to send the request.</li>
+</ul>
+<p>(5) Edit Endpoint</p>
+<ul>
+<li>This button will allow you to edit the Endpoint that this request is a part of.</li>
+</ul>
+<p id="requestid">(6) Copy Request ID</p>
+<ul>
+<li>This button will add the unique identifier of this request to your clipboard. This functionality is only needed for advanced users who wish to <a href="../terminology/#sendRequest">programatically send a request</a>.</li>
+</ul>
+<p>(7) Default Toggle</p>
+<ul>
+<li>Toggle this on or off to set/unset this request as the default for its endpoint.</li>
+</ul>
+<p>(8) Request Details Section</p>
+<ul>
+<li>Here you can edit different facets of the request.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Body</label><label for="__tabbed_3_2">Headers</label><label for="__tabbed_3_3">Query Params</label><label for="__tabbed_3_4">Scripts</label><label for="__tabbed_3_5">Environment</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Request Body Example" src="../../assets/images/getting-started/panels/request-body.png" /></p>
+<ul>
+<li>The request body. Sprocket Pan currently supports form data and raw data. The raw data can be Text, JSON, JavaScript, HTML, XML or Yaml. File sending is not currently supported but it is a top priority, so stay tuned.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Headers Example" src="../../assets/images/getting-started/panels/request-headers.png" /></p>
+<ul>
+<li>The headers to send in the request. </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Query Params Example" src="../../assets/images/getting-started/panels/request-query-params.png" /></p>
+<ul>
+<li>
+<p>The query parameters to send in the request. You can include arrays in the JSON editor for query parameters.</p>
+</li>
+<li>
+<p>Any query params you add will show up in the full URL.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Scripts Example" src="../../assets/images/getting-started/panels/request-scripts.png" /></p>
+<ul>
+<li>Pre- and Post- Request scripts at the request level.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Environment Example" src="../../assets/images/getting-started/panels/request-environment.png" /></p>
+<ul>
+<li>The environment variables for this request. Note that these values will override any service or global environment variables with the same name.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="9-response-details-section">(9) Response Details Section</h3>
+<ul>
+<li>The response details section can be split into two groups, the history header, and the response details.</li>
+</ul>
+<h4 id="history-header">History Header</h4>
+<p><img alt="History Header Example" src="../../assets/images/getting-started/panels/request-response-history-header.png" /></p>
+<ul>
+<li>Past responses are saved, up to a maximum number configurable in the settings. The history header displays and controls the responses.</li>
+</ul>
+<p>(1) Response Timestamp</p>
+<ul>
+<li>The exact time the response was recieved.</li>
+</ul>
+<p>(2) Diff Viewer</p>
+<ul>
+<li>Opens the Diff Viewer. See <a href="#diff-viewer">Diff Viewer</a></li>
+</ul>
+<p>(3) History Navigation</p>
+<ul>
+<li>Controls to navigate between different items in the response history.</li>
+</ul>
+<p>(4) Delete History Item</p>
+<ul>
+<li>Button to delete the current history item.</li>
+</ul>
+<h4 id="response-details">Response Details</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Body</label><label for="__tabbed_4_2">Details</label><label for="__tabbed_4_3">Request</label><label for="__tabbed_4_4">Event Log</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Response Body Example" src="../../assets/images/getting-started/panels/request-response-body.png" /></p>
+<ul>
+<li>The response body of the request, as well as the status code. This editor is read-only.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Details Example" src="../../assets/images/getting-started/panels/request-response-details.png" /></p>
+<ul>
+<li>Includes details about the response, including recieve and transit time, response code, and response headers.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Request Example" src="../../assets/images/getting-started/panels/request-response-request.png" /></p>
+<ul>
+<li>Includes details about the request sent for this specific response, including the request's method, url, headers, and body.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Event Log Example" src="../../assets/images/getting-started/panels/request-response-event-log.png" /></p>
+<ul>
+<li>
+<p>Shows the audit/event log for this response. Every time a script is called or a network request is sent, a log of that event will be added. If a script calls another script or sends another request, the logs for those actions will be indented such that they are a subset of that script. </p>
+</li>
+<li>
+<p>If a script or request is different from the current request selected, you can click the blue navigation button next to the name of the script or request to open its corresponding tab. </p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="diff-viewer">Diff Viewer</h2>
+<p><img alt="Diff Tool" src="../../assets/images/getting-started/panels/diff-tool-main.png" /></p>
+<ul>
+<li>The Diff Viewer, or Diff Tool, allows you to see the exact differences between two specific responses.</li>
+</ul>
+<p>(1) Service Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the service of the responses that you are comparing for each side.</li>
+</ul>
+<p>(2) Endpoint Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the endpoint of the responses that you are comparing for each side.</li>
+</ul>
+<p>(3) Request Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the request of the responses that you are comparing for each side.</li>
+</ul>
+<p>(4) Response History Selection (Each Side)</p>
+<ul>
+<li>Here you can select the specific response item in the request's history for each side.</li>
+</ul>
+<p>(5) Response Differences</p>
+<ul>
+<li>Once a response item is selected for both sides, you will be able to view the differences between the responses - split into multiple tabs.</li>
+</ul>
+<p><a class="md-button" href="../../getting-started/layout"><img alt="⬅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b05.svg" title=":arrow_left:" /> Layout</a>
+<a class="md-button" href="../terminology"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":arrow_right:" /> Terminology</a></p>
 
 
 
