@@ -624,6 +624,102 @@ You're not viewing the latest version.
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Script">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#activerequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      activeRequest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data" class="md-nav__link">
+    <span class="md-ellipsis">
+      data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getenvironment" class="md-nav__link">
+    <span class="md-ellipsis">
+      getEnvironment
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response" class="md-nav__link">
+    <span class="md-ellipsis">
+      response
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendrequest" class="md-nav__link">
+    <span class="md-ellipsis">
+      sendRequest
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setenvironmentvariable" class="md-nav__link">
+    <span class="md-ellipsis">
+      setEnvironmentVariable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setheader" class="md-nav__link">
+    <span class="md-ellipsis">
+      setHeader
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setqueryparam" class="md-nav__link">
+    <span class="md-ellipsis">
+      setQueryParam
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setqueryparams" class="md-nav__link">
+    <span class="md-ellipsis">
+      setQueryParams
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      All Scripts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -760,11 +856,75 @@ You're not viewing the latest version.
 <h2 id="panel">Panel</h2>
 <h2 id="file-system">File System</h2>
 <h3 id="script">Script</h3>
+<p>Scripts in Sprocket Pan are powerful tools that enable the user to perform some very advanced actions. One common workflow for engineers is to need to get an Auth token, if they do not already have one, before they send a given request. Another common workflow is to send a request to multiple services at once, and compare the results. Scripts enable that. Let's explore how they work.</p>
+<p>Firstly, all scripts are in Typescript, but the types are only there to help you, and if you are only familiar with Javascript, you will not need to learn anything new in order to write scripts. Most JS language features are available, and there is also an additional variable that you can reference to perform actions specific to Sprocket Pan - the <code>sprocketPan</code> variable (aliased to <code>sp</code>).</p>
+<p><img alt="Sprocket Pan Variable Fields" src="../../assets/images/terminology/scripts-sp-dropdown.png" /></p>
+<p>Let's run through the different fields:</p>
+<h4 id="activerequest">activeRequest</h4>
+<ul>
+<li>(could be null) The active request that the script is being run on, if it exists. If you run a standalone script manually, this will be null.</li>
+</ul>
+<h4 id="data">data</h4>
+<ul>
+<li>A read-only copy of the entire application data. Not sure why you'd need it, but it is there if you want it.</li>
+</ul>
+<h4 id="getenvironment">getEnvironment</h4>
+<ul>
+<li>A function with no arguments that returns all of the environment variables (key/value map) as an object.</li>
+</ul>
+<h4 id="response">response</h4>
+<ul>
+<li>(could be null) The latest response on the activeRequest, if it exists.</li>
+</ul>
+<h4 id="sendrequest">sendRequest</h4>
+<ul>
+<li>Allows you to send another Sprocket Pan request programatically. Takes one argument, which is the <a href="../panels/#gitrequestid">request ID</a>.</li>
+</ul>
+<h4 id="setenvironmentvariable">setEnvironmentVariable</h4>
+<ul>
+<li>
+<p>Takes in 2-3 arguments</p>
+<ul>
+<li>
+<p>Key: string - the key in the environment to set</p>
+</li>
+<li>
+<p>Value: string - the value to set</p>
+</li>
+<li>
+<p>(Optional) Level: 'request' | 'service' | 'global' - which environment to set the key/value in. Defaults to the request level unless the request is null, then will always set the globally selected environment.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="setheader">setHeader</h4>
+<ul>
+<li>Takes in a key and a value (strings), and saves the new header at the request level.</li>
+</ul>
+<h4 id="setqueryparam">setQueryParam</h4>
+<ul>
+<li>Takes in a key and a value, and adds the given value the array of values for the key, of it exists, or creates a new key/value pair if not. (Query Params can have multiple values for a given key)</li>
+</ul>
+<h4 id="setqueryparams">setQueryParams</h4>
+<ul>
+<li>Takes in a key (string) and a value (array of strings), and overrides the query param at a given key to be the list of values passed in.</li>
+</ul>
+<h4 id="all-scripts">All Scripts</h4>
+<ul>
+<li>
+<p>Any and all globally-defined / standalone scripts will also be available as a field in the <code>sprocketPan</code> variable, referrable by their <a href="../panels/#scriptcallablename">Script-Callable Name</a>. In the screenshot above, you can see we have two scripts defined with the names <code>Runnable_Script_Copy_</code> and <code>runnableScript</code> respectively.</p>
+</li>
+<li>
+<p>The return type of standalone scripts will always be the type of whatever the <a href="../panels/#scriptreturnvariable">Script Return Variable</a> is, wrapped in a promise. It is recommended that you <code>await</code> a script whenever you call it, as it may or may not be asynchronous.</p>
+</li>
+</ul>
 <h3 id="service">Service</h3>
 <h3 id="environment">Environment</h3>
 <h3 id="endpoint">Endpoint</h3>
 <h3 id="request">Request</h3>
 <h4 id="history">History</h4>
+<p><a class="md-button" href="../panels"><img alt="⬅" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/2b05.svg" title=":arrow_left:" /> Panels</a>
+<a class="md-button" href="../../contributing"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":arrow_right:" /> Contributing</a></p>
 
 
 
