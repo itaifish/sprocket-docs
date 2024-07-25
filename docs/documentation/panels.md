@@ -228,8 +228,9 @@ The request panel allows for editing and sending requests.
   * This button will allow you to edit the Endpoint that this request is a part of.
 
 (6) Copy Request ID
+{: #requestid}
 
-  * This button will add the unique identifier of this request to your clipboard. This functionality is only needed for advanced users who wish to pramatically send a request.
+  * This button will add the unique identifier of this request to your clipboard. This functionality is only needed for advanced users who wish to [programatically send a request](../terminology/#sendRequest).
 
 (7) Default Toggle
 
