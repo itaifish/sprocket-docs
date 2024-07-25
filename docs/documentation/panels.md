@@ -155,4 +155,50 @@ The service panel allows for editing services.
 
 ## Endpoint
 
+The endpoint panel allows for editing endpoints.
+
+![Endpoint Panel](../assets/images/getting-started/panels/endpoint-main.png)
+
+(1) The Title
+
+  * This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.
+
+(2) Request Method
+
+  * The RESTful Request Method. Click the dropdown to select the method to send.
+
+![Request Method Options](../assets/images/getting-started/panels/endpoint-methods.png)
+
+(3) Endpoint URL
+
+  * You can specify the additional url/uri string here. Each Endpoint corresponds to a unique URL of a service.
+
+![Additional URL Example](../assets/images/getting-started/panels/endpoint-url.png)
+
+(4) Options Tabs
+
+  * The three tabs you can work in: Headers, Query Params, and Scripts
+
+=== "Headers"
+
+    ![Endpoint Headers](../assets/images/getting-started/panels/endpoint-headers.png)
+
+    * Headers to add to every request on this endpoint. This panel is exactly the same as the [Environment](#environment)
+
+=== "Query Params"
+
+    ![Endpoint Query Params](../assets/images/getting-started/panels/endpoint-query-params.png)
+
+    * Query params to add to every request on this endpoint. Unlike other key-value-pair JSON editors, this editor can include arrays.
+
+=== "Scripts"
+
+    ![Endpoint Scripts](../assets/images/getting-started/panels/endpoint-scripts.png)
+
+    * Similar to Services and Requests, you can have a script run before or after a request on this endpoint is sent.
+
+(5) Jump to Request
+
+  * Endpoints are a collection of requests. You cannot send a request from an Endpoint. If an Endpoint has a default Request, this button will open up that request.
+
 ## Request
