@@ -637,6 +637,33 @@ You're not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Service
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Endpoint
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request" class="md-nav__link">
+    <span class="md-ellipsis">
+      Request
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -837,6 +864,81 @@ You're not viewing the latest version.
 <ul>
 <li>Shows the script's return variable's value, if it exists, once a script has been run.</li>
 </ul>
+<h2 id="service">Service</h2>
+<p>The service panel allows for editing services.</p>
+<p><img alt="Service Panel" src="../../assets/images/getting-started/panels/service.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Description</p>
+<ul>
+<li>A description of the service. Be as verbose or succinct as you wish. Displays in markdown.</li>
+</ul>
+<p>(3) Information Table</p>
+<ul>
+<li>General information about the service. The baseurl will be prepended to all requests, and you <strong>can</strong> use environment variables.</li>
+</ul>
+<p>(4) Environments</p>
+<ul>
+<li>Services can have environments local to that service. Click the first circle button to select or deselect the environment. The next button will allow you to duplicate the local environment, and the third button is for deleting the local environment. The buttons/features are otherwise exactly the same as the <a href="#environment">Environment Panel</a></li>
+</ul>
+<p>(5) Pre- and Post-Request Scripts</p>
+<ul>
+<li>Scripts that will run before and after any request is run in the service.</li>
+</ul>
+<p>(6) Recent Requests</p>
+<ul>
+<li>A list of the most recent requests that were called, with the date they were last used and a link to open their <a href="#request">Request Panel</a></li>
+</ul>
+<h2 id="endpoint">Endpoint</h2>
+<p>The endpoint panel allows for editing endpoints.</p>
+<p><img alt="Endpoint Panel" src="../../assets/images/getting-started/panels/endpoint-main.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Request Method</p>
+<ul>
+<li>The RESTful Request Method. Click the dropdown to select the method to send.</li>
+</ul>
+<p><img alt="Request Method Options" src="../../assets/images/getting-started/panels/endpoint-methods.png" /></p>
+<p>(3) Endpoint URL</p>
+<ul>
+<li>You can specify the additional url/uri string here. Each Endpoint corresponds to a unique URL of a service.</li>
+</ul>
+<p><img alt="Additional URL Example" src="../../assets/images/getting-started/panels/endpoint-url.png" /></p>
+<p>(4) Options Tabs</p>
+<ul>
+<li>The three tabs you can work in: Headers, Query Params, and Scripts</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Headers</label><label for="__tabbed_2_2">Query Params</label><label for="__tabbed_2_3">Scripts</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Endpoint Headers" src="../../assets/images/getting-started/panels/endpoint-headers.png" /></p>
+<ul>
+<li>Headers to add to every request on this endpoint. This panel is exactly the same as the <a href="#environment">Environment</a></li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Endpoint Query Params" src="../../assets/images/getting-started/panels/endpoint-query-params.png" /></p>
+<ul>
+<li>Query params to add to every request on this endpoint. Unlike other key-value-pair JSON editors, this editor can include arrays.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Endpoint Scripts" src="../../assets/images/getting-started/panels/endpoint-scripts.png" /></p>
+<ul>
+<li>Similar to Services and Requests, you can have a script run before or after a request on this endpoint is sent.</li>
+</ul>
+</div>
+</div>
+</div>
+<p>(5) Jump to Request</p>
+<ul>
+<li>Endpoints are a collection of requests. You cannot send a request from an Endpoint. If an Endpoint has a default Request, this button will open up that request.</li>
+</ul>
+<h2 id="request">Request</h2>
 
 
 
