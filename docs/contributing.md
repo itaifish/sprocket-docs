@@ -2,6 +2,8 @@
 
 ## Running Locally
 
+[Fork Sprocket Pan Here](https://github.com/itaifish/Sprocket-Pan/fork) 
+
 ### Recommended IDE Setup
 
 - [VS Code](https://code.visualstudio.com/) + [Recommended Extentions](https://github.com/itaifish/Sprocket-Pan/blob/main/.vscode/extensions.json)
