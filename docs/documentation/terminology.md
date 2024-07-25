@@ -1,10 +1,6 @@
 # Terminology
 
-## Panel
-
-## File System
-
-### Script
+## Script
 
 Scripts in Sprocket Pan are powerful tools that enable the user to perform some very advanced actions. One common workflow for engineers is to need to get an Auth token, if they do not already have one, before they send a given request. Another common workflow is to send a request to multiple services at once, and compare the results. Scripts enable that. Let's explore how they work.
 
@@ -13,6 +9,8 @@ Firstly, all scripts are in Typescript, but the types are only there to help you
 ![Sprocket Pan Variable Fields](../assets/images/terminology/scripts-sp-dropdown.png)
 
 Let's run through the different fields:
+
+### Fields
 
 #### activeRequest
 
@@ -62,15 +60,25 @@ Let's run through the different fields:
 
  * The return type of standalone scripts will always be the type of whatever the [Script Return Variable](../panels/#scriptreturnvariable) is, wrapped in a promise. It is recommended that you `await` a script whenever you call it, as it may or may not be asynchronous.
 
-### Service
+## Service
 
-### Environment
+A service is a series of endpoints that all share a root URL. An example of this may be the `https://swapi.dev/api/` service - all calls to the service fall under the same URL. In practice, you may use scripts or environments to modify this URL based on your needs, but all endpoints within a service should share a root.
 
-### Endpoint
+## Environment
 
-### Request
+An environment is a group of key-value pairs that defines custom values for the given situation. The most common use of environments is for seperating information between production and development APIs, which are otherwise the same service. You could have the environment define a different URL for the production and development environment, and then you could just switch between which environment is selected in order to call the same service in either production or development. Environments can also be used to persist data you may need to use later.
 
-#### History
+## Endpoint
+
+An endpoint is a specific url within an environment, that has a specific request method attached to it. An example of this may be the `GET https://swapi.dev/api/people/{personId}` endpoint. Environments always exist within the context of a service.
+
+## Request
+
+A request is the payload that will be sent via an endpoint. You may have any number of requests per endpoint, as it is a common workflow for engineers to test different payloads (be it request body, headers, query params, etc) to the same endpoint.
+
+### History
+
+The response history for requests is stored in the request and can be viewed and compared with other requests.
 
 [:arrow_left: Panels](../panels){ .md-button }
 [:arrow_right: Contributing](../../contributing){ .md-button }
