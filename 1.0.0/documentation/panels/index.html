@@ -662,6 +662,54 @@ You're not viewing the latest version.
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Request">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#9-response-details-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      (9) Response Details Section
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="(9) Response Details Section">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#history-header" class="md-nav__link">
+    <span class="md-ellipsis">
+      History Header
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response Details
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#diff-viewer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Diff Viewer
+    </span>
+  </a>
+  
 </li>
       
     </ul>
@@ -939,6 +987,163 @@ You're not viewing the latest version.
 <li>Endpoints are a collection of requests. You cannot send a request from an Endpoint. If an Endpoint has a default Request, this button will open up that request.</li>
 </ul>
 <h2 id="request">Request</h2>
+<p>The request panel allows for editing and sending requests.</p>
+<p><img alt="Request Panel" src="../../assets/images/getting-started/panels/request-main.png" /></p>
+<p>(1) The Title</p>
+<ul>
+<li>This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.</li>
+</ul>
+<p>(2) Request Method [Read-Only]</p>
+<ul>
+<li>The RESTful request method used. You can't edit this in the request panel, you must go into the <a href="#endpoint">Endpoint</a> to change this.</li>
+</ul>
+<p>(3) Full URL [Read-Only]</p>
+<ul>
+<li>Full URL that the request will call. You can't edit this in the request panel, you must go into the <a href="#endpoint">Endpoint</a> to change this. However, you can add query parameters to this specific request, which will show up as part of the full URL.</li>
+</ul>
+<p>(4) Send Request</p>
+<ul>
+<li>Button to send the request.</li>
+</ul>
+<p>(5) Edit Endpoint</p>
+<ul>
+<li>This button will allow you to edit the Endpoint that this request is a part of.</li>
+</ul>
+<p>(6) Copy Request ID</p>
+<ul>
+<li>This button will add the unique identifier of this request to your clipboard. This functionality is only needed for advanced users who wish to pramatically send a request.</li>
+</ul>
+<p>(7) Default Toggle</p>
+<ul>
+<li>Toggle this on or off to set/unset this request as the default for its endpoint.</li>
+</ul>
+<p>(8) Request Details Section</p>
+<ul>
+<li>Here you can edit different facets of the request.</li>
+</ul>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Body</label><label for="__tabbed_3_2">Headers</label><label for="__tabbed_3_3">Query Params</label><label for="__tabbed_3_4">Scripts</label><label for="__tabbed_3_5">Environment</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Request Body Example" src="../../assets/images/getting-started/panels/request-body.png" /></p>
+<ul>
+<li>The request body. Sprocket Pan currently supports form data and raw data. The raw data can be Text, JSON, JavaScript, HTML, XML or Yaml. File sending is not currently supported but it is a top priority, so stay tuned.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Headers Example" src="../../assets/images/getting-started/panels/request-headers.png" /></p>
+<ul>
+<li>The headers to send in the request. </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Query Params Example" src="../../assets/images/getting-started/panels/request-query-params.png" /></p>
+<ul>
+<li>
+<p>The query parameters to send in the request. You can include arrays in the JSON editor for query parameters.</p>
+</li>
+<li>
+<p>Any query params you add will show up in the full URL.</p>
+</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Scripts Example" src="../../assets/images/getting-started/panels/request-scripts.png" /></p>
+<ul>
+<li>Pre- and Post- Request scripts at the request level.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Request Environment Example" src="../../assets/images/getting-started/panels/request-environment.png" /></p>
+<ul>
+<li>The environment variables for this request. Note that these values will override any service or global environment variables with the same name.</li>
+</ul>
+</div>
+</div>
+</div>
+<h3 id="9-response-details-section">(9) Response Details Section</h3>
+<ul>
+<li>The response details section can be split into two groups, the history header, and the response details.</li>
+</ul>
+<h4 id="history-header">History Header</h4>
+<p><img alt="History Header Example" src="../../assets/images/getting-started/panels/request-response-history-header.png" /></p>
+<ul>
+<li>Past responses are saved, up to a maximum number configurable in the settings. The history header displays and controls the responses.</li>
+</ul>
+<p>(1) Response Timestamp</p>
+<ul>
+<li>The exact time the response was recieved.</li>
+</ul>
+<p>(2) Diff Viewer</p>
+<ul>
+<li>Opens the Diff Viewer. See <a href="#diff-viewer">Diff Viewer</a></li>
+</ul>
+<p>(3) History Navigation</p>
+<ul>
+<li>Controls to navigate between different items in the response history.</li>
+</ul>
+<p>(4) Delete History Item</p>
+<ul>
+<li>Button to delete the current history item.</li>
+</ul>
+<h4 id="response-details">Response Details</h4>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Body</label><label for="__tabbed_4_2">Details</label><label for="__tabbed_4_3">Request</label><label for="__tabbed_4_4">Event Log</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Response Body Example" src="../../assets/images/getting-started/panels/request-response-body.png" /></p>
+<ul>
+<li>The response body of the request, as well as the status code. This editor is read-only.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Details Example" src="../../assets/images/getting-started/panels/request-response-details.png" /></p>
+<ul>
+<li>Includes details about the response, including recieve and transit time, response code, and response headers.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Request Example" src="../../assets/images/getting-started/panels/request-response-request.png" /></p>
+<ul>
+<li>Includes details about the request sent for this specific response, including the request's method, url, headers, and body.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><img alt="Response Event Log Example" src="../../assets/images/getting-started/panels/request-response-event-log.png" /></p>
+<ul>
+<li>
+<p>Shows the audit/event log for this response. Every time a script is called or a network request is sent, a log of that event will be added. If a script calls another script or sends another request, the logs for those actions will be indented such that they are a subset of that script. </p>
+</li>
+<li>
+<p>If a script or request is different from the current request selected, you can click the blue navigation button next to the name of the script or request to open its corresponding tab. </p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="diff-viewer">Diff Viewer</h2>
+<p><img alt="Diff Tool" src="../../assets/images/getting-started/panels/diff-tool-main.png" /></p>
+<ul>
+<li>The Diff Viewer, or Diff Tool, allows you to see the exact differences between two specific responses.</li>
+</ul>
+<p>(1) Service Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the service of the responses that you are comparing for each side.</li>
+</ul>
+<p>(2) Endpoint Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the endpoint of the responses that you are comparing for each side.</li>
+</ul>
+<p>(3) Request Select Dropdown (Each Side)</p>
+<ul>
+<li>Here you can select the request of the responses that you are comparing for each side.</li>
+</ul>
+<p>(4) Response History Selection (Each Side)</p>
+<ul>
+<li>Here you can select the specific response item in the request's history for each side.</li>
+</ul>
+<p>(5) Response Differences</p>
+<ul>
+<li>Once a response item is selected for both sides, you will be able to view the differences between the responses - split into multiple tabs.</li>
+</ul>
 
 
 
