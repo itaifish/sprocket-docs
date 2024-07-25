@@ -46,6 +46,8 @@
       
     
     
+      <link rel="stylesheet" href="stylesheets/colors.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -428,6 +430,15 @@ You're not viewing the latest version.
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#compare-with-other-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compare with Other Tools
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -680,7 +691,47 @@ You're not viewing the latest version.
 <p>A tool for sending HTTP(S) requests over the internet - essentialy a UI on top of <a href="https://curl.se/">curl</a> plus some quality-of-life features. Similar to <a href="https://www.postman.com/">Postman</a> and <a href="https://insomnia.rest/">Insomnia</a>.</p>
 <h2 id="inspiration">Inspiration</h2>
 <p>Postman has been the go-to tool for developers to test their RESTful (and other types of) APIs for the good part of the last decade. However, <a href="https://github.com/postmanlabs/postman-app-support/issues/12114">recent changes to Postman</a> have made it such that you need to create an account to gain full functionality of the tool, and Postman actually deleted the user data of everyone who didn't migrate. Insomnia, which bills itself as a FOSS alternative, also recently pushed an <a href="https://github.com/Kong/insomnia/issues/6577#issuecomment-1738131554">update mirroring Postman's changes</a>.</p>
-<p>The enshittifaction of the internet has to stop. Greed drives everyday descision-making, and public tools have been constantly limit-tested against the willingness of end-users to put up with each additional pay-wall or data-wall. Sprocket Pan was just built for me, in order to have a tool that I know is free, secure, cloudless, and rich in features. However, in the spirit of open source, and in honor of all of the incredible free tools that I use every day, I wanted to make Sprocket Pan available for everyone. We will never charge money for anything, we will never collect or harvest any data (and/or train your data on an AI), and Sprocket Pan will always be FOSS.</p>
+<p>The enshittifaction of the internet has to stop. Greed drives everyday descision-making, and public tools have been constantly limit-tested against the willingness of end-users to put up with each additional pay-wall or data-wall. Sprocket Pan was just built for me, in order to have a tool that I know is free, secure, cloudless, and rich in features. However, in the spirit of open source, and in honor of all of the incredible free tools that I use every day, I wanted to make Sprocket Pan available for everyone. We will never charge money for anything, we will never
+collect or harvest any data (and/or train your data on an AI), and Sprocket Pan will always be FOSS.</p>
+<h2 id="compare-with-other-tools">Compare with Other Tools</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Tool Name</th>
+<th style="text-align: center;">Scripts</th>
+<th style="text-align: center;">Response History</th>
+<th style="text-align: center;">No Account Required</th>
+<th style="text-align: center;">100% FOSS with no hidden code</th>
+<th style="text-align: center;">Response Diff Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Sprocket Pan</td>
+<td style="text-align: center;"><span class="twemoji check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji check"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41 6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7Z"/></svg></span></td>
+</tr>
+<tr>
+<td style="text-align: center;">Postman</td>
+<td style="text-align: center;"><span class="twemoji kinda"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji kinda"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+</tr>
+<tr>
+<td style="text-align: center;">Insomnia</td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji kinda"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+<td style="text-align: center;"><span class="twemoji x"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg></span></td>
+</tr>
+</tbody>
+</table>
 <p><a class="md-button" href="getting-started/download"><img alt="➡" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/27a1.svg" title=":arrow_right:" /> Get started!</a></p>
 
 
