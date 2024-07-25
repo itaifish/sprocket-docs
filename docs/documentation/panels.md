@@ -202,3 +202,151 @@ The endpoint panel allows for editing endpoints.
   * Endpoints are a collection of requests. You cannot send a request from an Endpoint. If an Endpoint has a default Request, this button will open up that request.
 
 ## Request
+
+The request panel allows for editing and sending requests.
+
+![Request Panel](../assets/images/getting-started/panels/request-main.png)
+
+(1) The Title
+
+  * This text is editable. The title does not need to be unique, but it is reccomended to give it a unique and recognziable name.
+
+(2) Request Method [Read-Only]
+
+  * The RESTful request method used. You can't edit this in the request panel, you must go into the [Endpoint](#endpoint) to change this.
+
+(3) Full URL [Read-Only]
+
+  * Full URL that the request will call. You can't edit this in the request panel, you must go into the [Endpoint](#endpoint) to change this. However, you can add query parameters to this specific request, which will show up as part of the full URL.
+
+(4) Send Request
+
+  * Button to send the request.
+
+(5) Edit Endpoint
+
+  * This button will allow you to edit the Endpoint that this request is a part of.
+
+(6) Copy Request ID
+
+  * This button will add the unique identifier of this request to your clipboard. This functionality is only needed for advanced users who wish to pramatically send a request.
+
+(7) Default Toggle
+
+  * Toggle this on or off to set/unset this request as the default for its endpoint.
+
+(8) Request Details Section
+
+  * Here you can edit different facets of the request.
+
+=== "Body"  
+
+    ![Request Body Example](../assets/images/getting-started/panels/request-body.png)
+
+    * The request body. Sprocket Pan currently supports form data and raw data. The raw data can be Text, JSON, JavaScript, HTML, XML or Yaml. File sending is not currently supported but it is a top priority, so stay tuned.
+
+=== "Headers"
+
+    ![Request Headers Example](../assets/images/getting-started/panels/request-headers.png)
+
+    * The headers to send in the request. 
+
+=== "Query Params"
+
+    ![Request Query Params Example](../assets/images/getting-started/panels/request-query-params.png)
+
+    * The query parameters to send in the request. You can include arrays in the JSON editor for query parameters.
+
+    * Any query params you add will show up in the full URL.
+
+=== "Scripts"
+
+    ![Request Scripts Example](../assets/images/getting-started/panels/request-scripts.png)
+
+    * Pre- and Post- Request scripts at the request level.
+
+=== "Environment"
+
+    ![Request Environment Example](../assets/images/getting-started/panels/request-environment.png)
+
+    * The environment variables for this request. Note that these values will override any service or global environment variables with the same name.
+
+### (9) Response Details Section
+
+  * The response details section can be split into two groups, the history header, and the response details.
+
+#### History Header
+
+![History Header Example](../assets/images/getting-started/panels/request-response-history-header.png)
+
+* Past responses are saved, up to a maximum number configurable in the settings. The history header displays and controls the responses.
+
+(1) Response Timestamp
+
+  * The exact time the response was recieved.
+
+(2) Diff Viewer
+
+  * Opens the Diff Viewer. See [Diff Viewer](#diff-viewer)
+
+(3) History Navigation
+
+  * Controls to navigate between different items in the response history.
+
+(4) Delete History Item
+
+  * Button to delete the current history item.
+
+#### Response Details
+
+=== "Body"
+
+    ![Response Body Example](../assets/images/getting-started/panels/request-response-body.png)
+
+    * The response body of the request, as well as the status code. This editor is read-only.
+
+=== "Details"
+
+    ![Response Details Example](../assets/images/getting-started/panels/request-response-details.png)
+
+    * Includes details about the response, including recieve and transit time, response code, and response headers.
+
+=== "Request"
+
+    ![Response Request Example](../assets/images/getting-started/panels/request-response-request.png)
+
+    * Includes details about the request sent for this specific response, including the request's method, url, headers, and body.
+
+=== "Event Log"
+
+    ![Response Event Log Example](../assets/images/getting-started/panels/request-response-event-log.png)
+
+    * Shows the audit/event log for this response. Every time a script is called or a network request is sent, a log of that event will be added. If a script calls another script or sends another request, the logs for those actions will be indented such that they are a subset of that script. 
+
+    * If a script or request is different from the current request selected, you can click the blue navigation button next to the name of the script or request to open its corresponding tab. 
+
+## Diff Viewer
+
+![Diff Tool](../assets/images/getting-started/panels/diff-tool-main.png)
+
+* The Diff Viewer, or Diff Tool, allows you to see the exact differences between two specific responses.
+
+(1) Service Select Dropdown (Each Side)
+
+  * Here you can select the service of the responses that you are comparing for each side.
+
+(2) Endpoint Select Dropdown (Each Side)
+
+  * Here you can select the endpoint of the responses that you are comparing for each side.
+
+(3) Request Select Dropdown (Each Side)
+
+  * Here you can select the request of the responses that you are comparing for each side.
+
+(4) Response History Selection (Each Side)
+
+  * Here you can select the specific response item in the request's history for each side.
+
+(5) Response Differences
+
+* Once a response item is selected for both sides, you will be able to view the differences between the responses - split into multiple tabs.
