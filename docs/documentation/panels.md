@@ -353,3 +353,6 @@ The request panel allows for editing and sending requests.
 (5) Response Differences
 
 * Once a response item is selected for both sides, you will be able to view the differences between the responses - split into multiple tabs.
+
+[:arrow_left: Layout](../../getting-started/layout){ .md-button }
+[:arrow_right: Terminology](../terminology){ .md-button }

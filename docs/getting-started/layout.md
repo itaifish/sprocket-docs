@@ -10,7 +10,7 @@ In the workspace selection screen, you can click the giant blue and white plus b
 
 ![New Workspace Modal](../assets/images/getting-started/layout/new-workspace-modal.png)
 
-You can then fill out the creation modal and hit create. Once you do, a new workspace will be created. 	
+You can then fill out the creation modal and hit create. Once you do, a new workspace will be created.
 
 You can open a workspace by clicking on the `Open` button.
 

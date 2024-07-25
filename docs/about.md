@@ -13,6 +13,8 @@
 
 - ### KateLynn Pullen
 
+    ![KateLynn Avatar](../assets/images/about/avatars/KateLynnAvatar.png)
+
     [:simple-github:](https://github.com/kdpullen95){ .md-button }
 
 </div>

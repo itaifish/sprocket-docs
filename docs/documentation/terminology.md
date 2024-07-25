@@ -71,3 +71,6 @@ Let's run through the different fields:
 ### Request
 
 #### History
+
+[:arrow_left: Panels](../panels){ .md-button }
+[:arrow_right: Contributing](../../contributing){ .md-button }

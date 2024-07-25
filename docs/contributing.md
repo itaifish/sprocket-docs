@@ -14,3 +14,6 @@
 
 1. `yarn`
 2. `yarn run start`
+
+[:arrow_left: Terminology](../../documentation/terminology){ .md-button }
+[:arrow_right: About](../about){ .md-button }
