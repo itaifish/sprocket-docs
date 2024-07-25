@@ -50,7 +50,8 @@ theme:
         - toc.integrate
         - navigation.top
         - offline
-
+extra_css:
+    - stylesheets/colors.css
 extra:
     version:
         provider: mike

@@ -6,6 +6,15 @@ A tool for sending HTTP(S) requests over the internet - essentialy a UI on top o
 
 Postman has been the go-to tool for developers to test their RESTful (and other types of) APIs for the good part of the last decade. However, [recent changes to Postman](https://github.com/postmanlabs/postman-app-support/issues/12114) have made it such that you need to create an account to gain full functionality of the tool, and Postman actually deleted the user data of everyone who didn't migrate. Insomnia, which bills itself as a FOSS alternative, also recently pushed an [update mirroring Postman's changes](https://github.com/Kong/insomnia/issues/6577#issuecomment-1738131554).
 
-The enshittifaction of the internet has to stop. Greed drives everyday descision-making, and public tools have been constantly limit-tested against the willingness of end-users to put up with each additional pay-wall or data-wall. Sprocket Pan was just built for me, in order to have a tool that I know is free, secure, cloudless, and rich in features. However, in the spirit of open source, and in honor of all of the incredible free tools that I use every day, I wanted to make Sprocket Pan available for everyone. We will never charge money for anything, we will never collect or harvest any data (and/or train your data on an AI), and Sprocket Pan will always be FOSS.
+The enshittifaction of the internet has to stop. Greed drives everyday descision-making, and public tools have been constantly limit-tested against the willingness of end-users to put up with each additional pay-wall or data-wall. Sprocket Pan was just built for me, in order to have a tool that I know is free, secure, cloudless, and rich in features. However, in the spirit of open source, and in honor of all of the incredible free tools that I use every day, I wanted to make Sprocket Pan available for everyone. We will never charge money for anything, we will never
+collect or harvest any data (and/or train your data on an AI), and Sprocket Pan will always be FOSS.
+
+## Compare with Other Tools
+
+| Tool Name     | Scripts               | Response History     | No Account Required  | 100% FOSS with no hidden code | Response Diff Tool   |
+| :-----------: | :-------------------: | :------------------: | :------------------: | :------------------:          | :------------------: |
+| Sprocket Pan  | :material-check-all:{.check}  | :material-check-all:{.check} | :material-check-all:{.check} | :material-check-all:{.check}          | :material-check-all:{.check} |
+| Postman       | :material-check:{.kinda}      | :material-check:{.kinda}     | :material-close:{.x}     | :material-close:{.x}              | :material-close:{.x}  |
+| Insomnia      | :material-close:{.x}      | :material-check:{.kinda}     | :material-close:{.x}     | :material-close:{.x}              | :material-close:{.x}  |
 
 [:arrow_right: Get started!](getting-started/download){ .md-button }
