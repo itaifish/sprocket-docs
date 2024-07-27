@@ -16,7 +16,7 @@
 === "Linux"
 
     [AppImage](https://github.com/itaifish/Sprocket-Pan/releases/download/v{{ extra.config.version }}/sprocket-pan_{{ extra.config.version }}_amd64.AppImage)
-        - Compatible with all versions of Linux
+        - Compatible with all Linux Distros
     
     <details><summary>Other Install Options</summary>
 
@@ -28,7 +28,7 @@
 
 === "Mac"
 
-    - [gzip'd .App](https://github.com/itaifish/Sprocket-Pan/releases/download/v{{ extra.config.version }}/SprocketPan_aarch64.app.tar.gz)
+    [gzip'd .App](https://github.com/itaifish/Sprocket-Pan/releases/download/v{{ extra.config.version }}/SprocketPan_aarch64.app.tar.gz)
 
     <details><summary>Other Install Options</summary>
 
