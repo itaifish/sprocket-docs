@@ -19,5 +19,5 @@
 1. `yarn` (install dependancies)
 2. `yarn run start` (run locally)
 
-[:arrow_left: Terminology](../../documentation/terminology){ .md-button }
+[:arrow_left: Terminology](../documentation/terminology){ .md-button }
 [:arrow_right: About](../about){ .md-button }
