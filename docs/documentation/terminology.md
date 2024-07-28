@@ -68,6 +68,8 @@ A service is a series of endpoints that all share a root URL. An example of this
 
 An environment is a group of key-value pairs that defines custom values for the given situation. The most common use of environments is for seperating information between production and development APIs, which are otherwise the same service. You could have the environment define a different URL for the production and development environment, and then you could just switch between which environment is selected in order to call the same service in either production or development. Environments can also be used to persist data you may need to use later.
 
+Environment variables can be referenced using the curly brace syntax - `{variableName}`. This will work in urls, other environments, headers, query params, bodies, etc.
+
 ## Endpoint
 
 An endpoint is a specific url within an environment, that has a specific request method attached to it. An example of this may be the `GET https://swapi.dev/api/people/{personId}` endpoint. Environments always exist within the context of a service.
