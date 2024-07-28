@@ -914,6 +914,7 @@ You're not viewing the latest version.
 <p>A service is a series of endpoints that all share a root URL. An example of this may be the <code>https://swapi.dev/api/</code> service - all calls to the service fall under the same URL. In practice, you may use scripts or environments to modify this URL based on your needs, but all endpoints within a service should share a root.</p>
 <h2 id="environment">Environment</h2>
 <p>An environment is a group of key-value pairs that defines custom values for the given situation. The most common use of environments is for seperating information between production and development APIs, which are otherwise the same service. You could have the environment define a different URL for the production and development environment, and then you could just switch between which environment is selected in order to call the same service in either production or development. Environments can also be used to persist data you may need to use later.</p>
+<p>Environment variables can be referenced using the curly brace syntax - <code>{variableName}</code>. This will work in urls, other environments, headers, query params, bodies, etc.</p>
 <h2 id="endpoint">Endpoint</h2>
 <p>An endpoint is a specific url within an environment, that has a specific request method attached to it. An example of this may be the <code>GET https://swapi.dev/api/people/{personId}</code> endpoint. Environments always exist within the context of a service.</p>
 <h2 id="request">Request</h2>
