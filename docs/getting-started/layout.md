@@ -26,7 +26,9 @@ The toolbar is a floating set of actions that the user can take to interact with
 
 #### Import From File
 
-The first button in the top row of buttons, `Import from File` opens up a file selection dialog. SP currently supports openAPI/swagger docs versions `2`, `3` and `3.1`. You can click on any openAPI `JSON` or `yaml` file to load the document into SP.
+The first button in the top row of buttons, `Import from File` opens a dropdown for the multiple types of imports Sprocket Pan can handle. Those currently include [Sprocket Pan Exports](../../documentation/panels/#data), Insomnia, Postman, and OpenAPI/Swagger.
+
+![Import From File Dialog](../assets/images/getting-started/layout/import-from-file.png)
 
 #### Create New
 

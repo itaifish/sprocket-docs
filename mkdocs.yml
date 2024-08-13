@@ -50,11 +50,13 @@ theme:
         - toc.integrate
         - navigation.top
         - offline
-extra_css:
-    - stylesheets/colors.css
 extra:
     version:
         provider: mike
+
+extra_css:
+    - stylesheets/colors.css
+
 plugins:
     - mike:
           # These fields are all optional; the defaults are as below...

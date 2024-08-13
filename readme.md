@@ -11,5 +11,5 @@ pip install -r requirements.txt
 Start
 
 ```Shell
-mkdocs servce
+mkdocs serve
 ```
